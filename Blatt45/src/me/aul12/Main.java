@@ -123,6 +123,7 @@ public class Main {
             r2L[c] = new Line();
 
             //Eckpunkte
+
             r2L[c].p1.y = r2C[(c / 2) * 2 + 1];                     //1133
             r2L[c].p2.y = r2C[(((c + 1) / 2) % 2) * 2 + 1];         //1331
             r2L[c].p1.x = r2C[(((c + 1) / 2) % 2) * 2];             //0220
