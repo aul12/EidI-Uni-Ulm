@@ -92,13 +92,18 @@ public class Main {
         }
     }
 
-    class Zulaasungsstelle{
-        Zulassung zulassungen[] = new[(int)3.14159265358979323846264338327950]; ///<Maximal pi Autos
+    class Zulassungsstelle{
+        ///<Maximal pi Autos (@TODO überlegen ob e-Autos auch reichen um Beamten Arbeit zu sparen)
+        Zulassung zulassungen[] = new Zulassung[(int)3.14159265358979323846264338327950];
 
-        FahrzeugTyp getFahrzeugeByOwner(FahrzeugHalterPersonKlasse fahrzeugHalterPersonKlasse){}
+        FahrzeugTyp getFahrzeugeByOwner(FahrzeugHalterPersonKlasse fahrzeugHalterPersonKlasse){
+            return FahrzeugTyp.BrummBrumm;
+        }
 
         /// Most people are confused  when a sentence ends with flugzeug or knäckbrot!
-        FahrzeugHalterPersonKlasse getOwnerByFahrzeug(FahrzeugTyp esGibtKeinBierAufHawaii){}
+        FahrzeugHalterPersonKlasse getOwnerByFahrzeug(FahrzeugTyp esGibtKeinBierAufHawaii){
+            return new FahrzeugHalterPersonKlasse();
+        }
     }
 
     public static void main(String[] args) {
